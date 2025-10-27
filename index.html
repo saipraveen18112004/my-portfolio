@@ -3,98 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Sai Praveen</title>
+    <title>Sai Praveen | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <header>
-        <h1>Sai Praveen</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#internships">Internships</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">Sai Praveen</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I'm a passionate Web Developer & Software Developer.</p>
-        <a href="#projects" class="btn">View My Work</a>
-        <!-- Resume Download -->
-        <a href="SaiPraveen_Resume.pdf" download class="btn">Download Resume</a>
-        <!-- Open Resume in Browser -->
-        <a href="SaiPraveen_Resume.pdf" target="_blank" class="btn">View Resume</a>
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm a passionate Web Developer & Software Developer exploring innovative technologies.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="Sai_Praveen_Resume.pdf" download class="btn btn-outline">Download Resume</a>
+        </div>
     </section>
 
-    <!-- About Me -->
-    <!-- About Me -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am Sai Praveen, a B.Tech Computer Science and Engineering student with a strong passion for 
-        software development and web technologies. I enjoy building practical solutions and have hands-on 
-        experience in Java, Python, HTML, CSS, and JavaScript. My interests lie in creating efficient, 
-        user-friendly applications and exploring emerging technologies like AI and Machine Learning.  
-        I am eager to apply my skills, contribute to impactful projects, and continuously grow as a developer.
-    </p>
-</section>
-
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I’m Sai Praveen, a B.Tech CSE student passionate about building real-world applications. 
+            I enjoy working with Java, Python, HTML, CSS, and JavaScript. My interests include 
+            Software Development, Web Design, and exploring AI & Machine Learning to create impactful solutions.
+        </p>
+    </section>
 
     <!-- Projects -->
-    <!-- Projects -->
-<section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-        <h3>BMI Calculator</h3>
-        <p>A Java Swing-based BMI calculator that takes height in cm/feet and calculates BMI.</p>
-    </div>
-    <div class="project">
-        <h3>Student Grade Calculator</h3>
-        <p>A Java application that calculates total marks, percentage, and grades based on student marks.</p>
-    </div>
-    <div class="project">
-        <h3>Study Subscription Platform</h3>
-        <p>A Java-based study subscription platform with user management, learning categories, pricing, and coupon features.</p>
-    </div>
-    <div class="project">
-        <h3>Community Connect+</h3>
-        <p>A smart community platform designed to connect people, share resources, and improve collaboration. 
-        Features include event updates, discussion forums, and real-time notifications to strengthen local engagement.</p>
-    </div>
-</section>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
 
+            <div class="card">
+                <h3>Match My Resume <span class="percent">(95% Completed)</span></h3>
+                <p>
+                    An AI-based ATS Resume Optimizer that personalizes resumes for specific job roles 
+                    using NLP and keyword-matching. Built using Flask, OpenAI API, and React for UI.
+                </p>
+            </div>
 
-    <!-- Internships Section -->
-    <section id="internships">
-        <h2>Internships</h2>
-        <div class="internship">
-            <h3>Google Android Developer Virtual Internship</h3>
-            <p>Worked on real-world Android projects, collaborated with peers and mentors, and enhanced model development and algorithm optimization skills.</p>
+            <div class="card">
+                <h3>Smart Animal Alert Fence System <span class="percent">(90% Completed)</span></h3>
+                <p>
+                    An IoT + AI system using YOLO and sensors to detect, alert, and prevent animal intrusions 
+                    on farmland. Designed to protect crops using ultrasonic, light, and water deterrents.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>BMI Calculator</h3>
+                <p>A Java Swing-based application to calculate BMI from user’s height and weight.</p>
+            </div>
+
+            <div class="card">
+                <h3>Student Grade Calculator</h3>
+                <p>Java application that computes total marks, percentage, and grade for student reports.</p>
+            </div>
+
+            <div class="card">
+                <h3>Study Subscription Platform</h3>
+                <p>A Java platform with user management, pricing, coupons, and category-based learning features.</p>
+            </div>
+
+            <div class="card">
+                <h3>Community Connect+</h3>
+                <p>
+                    A smart community web app for collaboration and sharing. Includes event updates, 
+                    forums, and real-time notifications to strengthen local connections.
+                </p>
+            </div>
+
         </div>
-        <div class="internship">
+    </section>
+
+    <!-- Internships -->
+    <section id="internships" class="internships">
+        <h2>Internships</h2>
+        <div class="card">
+            <h3>Google Android Developer Virtual Internship</h3>
+            <p>Developed Android projects and enhanced model optimization and app logic understanding.</p>
+        </div>
+        <div class="card">
             <h3>AI-ML Course Completion</h3>
-            <p>Successfully completed an AI-ML course, gaining hands-on experience in machine learning and artificial intelligence techniques.</p>
+            <p>Completed AI-ML training with hands-on projects in machine learning and deep learning concepts.</p>
+        </div>
+    </section>
+    <!-- Internships Section -->
+    </section>
+
+    <!-- ✅ Accomplishments Section (add here) -->
+    <section id="accomplishments" class="accomplishments">
+        <h2>Accomplishments</h2>
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+                <h3>🌐 Google Student Ambassador (GSA)</h3>
+                <p>Represented the <strong>Google Developer Community</strong> as a Student Ambassador, promoting Google technologies, organizing tech sessions, and mentoring peers in web and AI development.</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>💡 Hackathon Participation</h3>
+                <p>Participated in multiple <strong>college-level hackathons</strong> focusing on smart automation, sustainability, and AI-integrated systems.</p>
+            </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-  <h2>Contact</h2>
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:saipraveen18112004@gmail.com">saipraveen18112004@gmail.com</a></li>
-    <li><strong>Mobile:</strong> <a href="tel:+91 9346275416">+91-9346275416</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/saipraveen18112004" target="_blank">github.com/saipraveen18112004</a></li>
-    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sai-praveen-9043a9296" target="_blank">linkedin.com/in/sai-praveen-9043a9296</a></li>
-  </ul>
-</section>
+    <section id="contact" class="contact">
 
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:saipraveen18112004@gmail.com">saipraveen18112004@gmail.com</a></li>
+            <li><strong>Mobile:</strong> <a href="tel:+919346275416">+91-9346275416</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/saipraveen18112004" target="_blank">github.com/saipraveen18112004</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sai-praveen-9043a9296" target="_blank">linkedin.com/in/sai-praveen-9043a9296</a></li>
+        </ul>
+    </section>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>© 2025 Sai Praveen | Built with ❤️ and Code</p>
+    </footer>
 </body>
 </html>
